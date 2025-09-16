@@ -3,13 +3,13 @@ import matplotlib.pyplot as plt
 from datetime import date
 from datetime import timedelta
 import easygui
-from lib import stock_view
+import lib
 
 
 
 while True:
     new_win = input("Do you want a new stock view? [Y/n] ")
     if new_win == "Y":
-        stock_view()
+        lib.stock_view()
     else:
         break
